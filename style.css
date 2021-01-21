@@ -1,14 +1,30 @@
+:root{
+    background-color: firebrick;
+    font-family: 'Lobster', cursive;
+}
+
+button{
+    background-color: white;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 400px;
+    font-family: 'Lobster', cursive;
+}
+
 #container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-   width: 600px;
-   height: 600px;
-   column-gap: 0px;
-   row-gap: 0px;
-   position: fixed;
-  top: 58%;
-  left: 50%;
+    width: 600px;
+    height: 600px;
+    column-gap: 0px;
+    row-gap: 0px;
+    position: fixed;
+    top: 63%;
+    left: 50%;
+    border-style: inset;
+    border-width: 8px;
+    border-color: rgb(49, 47, 45);
   
   transform: translate(-50%, -50%);
 }
@@ -17,10 +33,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
+    margin-top: 11vh;
 }
 
 h1{
-    margin-top: 14vh;
+    
+    color: goldenrod;
 }
 
 .innerSquare{
@@ -29,5 +48,6 @@ h1{
     border-style: solid;
     border-width: 1px;
     justify-self: stretch;
+    background-color: white;
 }
 

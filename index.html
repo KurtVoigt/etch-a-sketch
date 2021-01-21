@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Etch a Sketch</title>
+    <title>Etch-a-Sketch</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
 </head>
 <div id="headerDiv">
-    <h1>Etch a Sketch</h1>
+    <h1>Etch-a-Sketch</h1>
     <div id="buttonFlex">
         <button id="reset">Clear</button>
         <button id="rainbow">Rainbow Fill In</button>
         <button id="resize">Rezise Grid</button>
     </div>
+    
    
 </div>
 
@@ -72,9 +75,11 @@
     rainbowButton.onclick = function(){
         if(!rainbowColors){
             rainbowColors = true;
+            rainbowButton.innerText = "Black Fill In";
         }
         else{
             rainbowColors = false;
+            rainbowButton.innerText ="Rainbow Fill In";
         }
         return
     }
